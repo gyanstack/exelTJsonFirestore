@@ -1,0 +1,11 @@
+<input type="text" name="departmentName" placeholder="Department Name" [(ngModel)]="department"/>
+<hr>
+<input type="file" (change)="fileChange($event)" name="file" /> 
+<hr>
+<h4 *ngIf="showMessage">{{message}}</h4>
+<br>
+<br>
+<br>
+<br>
+<input type="submit" (click)="uploadConvertedJson()" value="Upload Converted Json"/>
+<h4 *ngIf="uploaded">{{uploadMessage}}</h4>
